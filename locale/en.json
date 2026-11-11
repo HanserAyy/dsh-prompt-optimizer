@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Prompt optimizer",
+    "description": "Adds a sparkle button in the composer tool row that rewrites the current draft into a clearer, more specific prompt and writes the result straight back into the input box."
+  }
+}

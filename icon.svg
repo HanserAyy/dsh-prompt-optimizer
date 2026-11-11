@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- A stroked four-point sparkle with a filled companion at the upper right,
+       matching the shape the WorkBuddy composer uses for the same action. -->
+  <path d="M26 13.5c1.9 10.6 6.9 15.6 17.5 17.5C32.9 32.9 27.9 37.9 26 48.5 24.1 37.9 19.1 32.9 8.5 31 19.1 29.1 24.1 24.1 26 13.5Z"
+        stroke="#0F1115" stroke-width="4.2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M49 8c.9 5.1 1.9 6.1 7 7-5.1.9-6.1 1.9-7 7-.9-5.1-1.9-6.1-7-7 5.1-.9 6.1-1.9 7-7Z"
+        fill="#0F1115"/>
+</svg>
