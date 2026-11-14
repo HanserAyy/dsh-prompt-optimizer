@@ -208,7 +208,9 @@ function mountRoute(ctx) {
 					? `the model call timed out after ${Math.round(REQUEST_TIMEOUT_MS / 1000)}s`
 					: (error?.message ?? String(error));
 				const code = typeof error?.code === "string" ? error.code : aborted ? "timeout" : "failed";
-				ctx.logger.warn(`dsh-prompt-optimizer: rewrite failed (${code}): ${message}`);
+				// `logger` is optional on a Host context; never let a logging call
+				// turn a handled failure into an unhandled 500.
+				ctx.logger?.warn?.(`dsh-prompt-optimizer: rewrite failed (${code}): ${message}`);
 				return sendJson(res, aborted ? 504 : 502, { error: message, code });
 			} finally {
 				clearTimeout(timer);

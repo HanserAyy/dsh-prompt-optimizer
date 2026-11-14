@@ -1,6 +1,7 @@
 {
   "meta": {
     "title": "Prompt optimizer",
-    "description": "Adds a sparkle button in the composer tool row that rewrites the current draft into a clearer, more specific prompt and writes the result straight back into the input box."
+    "description": "Adds a sparkle button in the composer tool row, left of the model selector. It rewrites the current draft into a clearer, more specific prompt and writes the result straight back into the input box. With an empty draft the button is dimmed; while the rewrite runs it turns into a spinner. Each click sends the draft text to the model selected in the composer as an extra request, billed to that model, and the rewrite replaces the draft so it can be edited or undone. Turn the plugin off to restore the plain composer.",
+    "detail": "docs/DETAIL.md"
   }
 }

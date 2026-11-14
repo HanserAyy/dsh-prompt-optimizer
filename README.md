@@ -77,8 +77,12 @@ plugin_manager  install_bundle  target=<本仓库的绝对路径>
 ├── client.js          # Client 半边：按钮、样式、草稿读写
 ├── cordis.patch.yml   # bundle patch，声明这一行
 ├── locale/
-│   ├── zh.json        # 中文标题与描述
+│   ├── zh.json        # 中文标题、描述与详情页指向
 │   └── en.json
+├── docs/
+│   ├── DETAIL.md      # 详情页（英文）
+│   ├── DETAIL.zh.md   # 详情页（中文）
+│   └── preview.svg    # 详情页配图（无文字，明暗主题通用）
 ├── icon.svg           # 插件图标（描边四角星芒）
 └── package.json
 ```
@@ -105,3 +109,13 @@ node --check client.js
 ## 许可证
 
 [MIT](LICENSE)
+
+## 版本适配
+
+| 插件版本 | DSH 版本 | 说明 |
+| --- | --- | --- |
+| 1.1.0 | 0.2.2-rc.3 | 补详情页文档与配图（`docs/DETAIL.md` / `docs/DETAIL.zh.md` / `docs/preview.svg`），`meta.description` 写清计费与开关影响；Host 侧日志调用改为可选，缺 `ctx.logger` 时不再抛错。 |
+| 1.0.0 | 0.2.2-rc.1 及更早 | 初始版本。 |
+
+DSH 升级到 0.2.2-rc.3 后，插件本体（slot 注册、loopback 路由、`llm.stream` 调用）无需改动即可运行；
+若插件“消失了”，先到插件页面确认这个 bundle 是否被停用（`enabled: false`），而不是先怀疑代码。
