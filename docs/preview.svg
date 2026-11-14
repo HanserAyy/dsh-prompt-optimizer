@@ -23,14 +23,13 @@
     <path d="M10.6 -12.4c.29 1.68.72 2.11 2.4 2.4-1.68.29-2.11.72-2.4 2.4-.29-1.68-.72-2.11-2.4-2.4 1.68-.29 2.11-.72 2.4-2.4Z" fill="#2f6fe4"/>
   </g>
 
-  <path d="M425 224v14" fill="none" stroke="#c3cddb" stroke-width="2" stroke-dasharray="4 4"/>
+  <path d="M425 218v10" fill="none" stroke="#c3cddb" stroke-width="2" stroke-dasharray="4 4"/>
+  <path d="M425 232l-4.5-6h9Z" fill="#c3cddb"/>
 
   <rect x="256" y="238" width="128" height="30" rx="15" fill="#ffffff" stroke="#b7c3d2" stroke-width="2"/>
   <circle cx="279" cy="253" r="11" fill="#ffffff" stroke="#2f6fe4" stroke-width="2"/>
-  <g transform="translate(279 253) scale(0.85)">
-    <path d="M0 -9.6c.66 3.66 2.34 5.34 6 6-3.66.66-5.34 2.34-6 6-.66-3.66-2.34-5.34-6-6 3.66-.66 5.34-2.34 6-6Z" fill="none" stroke="#2f6fe4" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M10.6 -12.4c.29 1.68.72 2.11 2.4 2.4-1.68.29-2.11.72-2.4 2.4-.29-1.68-.72-2.11-2.4-2.4 1.68-.29 2.11-.72 2.4-2.4Z" fill="#2f6fe4"/>
-  </g>
+  <circle cx="279" cy="253" r="7" fill="none" stroke="#9db8ea" stroke-width="2"/>
+  <path d="M279 246a7 7 0 0 1 7 7" fill="none" stroke="#2f6fe4" stroke-width="2" stroke-linecap="round"/>
   <rect x="298" y="246" width="70" height="7" rx="3.5" fill="#c9d3e0"/>
   <rect x="298" y="257" width="46" height="6" rx="3" fill="#dfe6ee"/>
 </svg>
